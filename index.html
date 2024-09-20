@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Pribadi Mohammad Wahyu Sutanto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #eef2f3, #8e9eab);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            animation: fadeIn 1s;
+            overflow: hidden;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            overflow: hidden;
+            animation: slideInFromLeft 1s ease-out;
+        }
+        @keyframes slideInFromLeft {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1.2s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px;
+            animation: zoomIn 0.7s ease-in-out;
+            transform: scale(0.9);
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #555;
+            animation: fadeIn 2s ease;
+        }
+        .widget {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .widget a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: bounceIn 1s ease;
+            opacity: 0;
+        }
+        .widget a:nth-child(1) {
+            background-color: #25D366; /* WhatsApp Green */
+            animation-delay: 0.2s;
+        }
+        .widget a:nth-child(2) {
+            background-color: #FF0000; /* YouTube Red */
+            animation-delay: 0.4s;
+        }
+        .widget a:nth-child(3) {
+            background-color: #000000; /* TikTok Black */
+            animation-delay: 0.6s;
+        }
+        .widget a:nth-child(4) {
+            background-color: #3b5998; /* Facebook Blue */
+            animation-delay: 0.8s;
+        }
+        .widget a:nth-child(5) {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Instagram Rainbow */
+            animation-delay: 1s;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.7); opacity: 0; }
+            70% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        .widget a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .widget img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .widget a:hover img {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Halaman Pribadi Mohammad Wahyu Sutanto</h1>
+    </header>
+    <div class="container">
+        <p>Silakan kunjungi media sosial saya di bawah ini:</p>
+        <div class="widget">
+            <a href="https://wa.me/+6283179735240" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                WhatsApp
+            </a>
+            <a href="https://youtube.com/@wahyuofc548?si=FzyXBB27pLjP84jy" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                YouTube
+            </a>
+            <a href="https://www.tiktok.com/@whyustnt?_t=8psiCRRsLL8&_r=1" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIBv_78z_9MzcxwlU_VVBTQuUITP1iAH1XCctsyD70BLQ5DzRLM771Vfk&s=10" alt="TikTok">
+                TikTok
+            </a>
+            <a href="https://www.facebook.com/wahyuganssess" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/whyustnt?igsh=YzU1NGVlODEzOA==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                Instagram
+            </a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const widgets = document.querySelectorAll('.widget a');
+            widgets.forEach((widget, index) => {
+                setTimeout(() => {
+                    widget.style.opacity = 1;
+                }, index * 200);
+            });
+        });
+        console.log('Selamat datang di halaman pribadi Mohammad Wahyu Sutanto!');
+    </script>
+</body>
+</html>
